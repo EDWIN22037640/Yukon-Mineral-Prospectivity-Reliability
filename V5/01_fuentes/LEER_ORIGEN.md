@@ -1,0 +1,1 @@
+Los archivos CSV y el modelo `.h5` de los autores originales se obtienen del repositorio fuente y deben copiarse localmente usando `scripts/preparar_fuentes_originales.py`. No se incluyen en este depósito por falta de licencia explícita en la copia revisada.

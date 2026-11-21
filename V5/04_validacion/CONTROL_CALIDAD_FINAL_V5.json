@@ -1,0 +1,92 @@
+{
+  "estado": "VALIDADO",
+  "tif_central_7_bandas": true,
+  "anclas_exactas": 763,
+  "interpoladas": 12217,
+  "mascara_soporte_celdas": 1372,
+  "capas_gpkg": [
+    {
+      "name": "PCA_763_CELDAS",
+      "geometry_type": "Point"
+    },
+    {
+      "name": "ENTRENAMIENTO_312",
+      "geometry_type": "Point"
+    }
+  ],
+  "tifs": [
+    {
+      "archivo": "PCA7_V5_ESPACIAL_RECOMENDADO_7B.tif",
+      "bandas": 7,
+      "pixeles_validos_por_banda": [
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980
+      ],
+      "error_max_en_observados": 2.3803710913483656e-07
+    },
+    {
+      "archivo": "PCA7_V5_COPULA_ORIGINAL_LIKE_7B.tif",
+      "bandas": 7,
+      "pixeles_validos_por_banda": [
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980
+      ],
+      "error_max_en_observados": 2.3803710913483656e-07
+    },
+    {
+      "archivo": "PCA7_V5_SOLO_SOPORTE_CERCANO_7B.tif",
+      "bandas": 7,
+      "pixeles_validos_por_banda": [
+        1372,
+        1372,
+        1372,
+        1372,
+        1372,
+        1372,
+        1372
+      ],
+      "error_max_en_observados": 2.3803710913483656e-07
+    },
+    {
+      "archivo": "V5_RADIO_ERROR_90_EMPIRICO_7B.tif",
+      "bandas": 7,
+      "pixeles_validos_por_banda": [
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980
+      ],
+      "error_max_en_observados": null
+    },
+    {
+      "archivo": "V5_PCA_REALIZACION_PLAUSIBLE_7B.tif",
+      "bandas": 7,
+      "pixeles_validos_por_banda": [
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980,
+        12980
+      ],
+      "error_max_en_observados": 2.3803710913483656e-07
+    }
+  ],
+  "test_estadistico_estricto": 581,
+  "perfiles_excluidos_por_coincidencia": 26,
+  "origen_raster_original": "NO RECUPERADO"
+}

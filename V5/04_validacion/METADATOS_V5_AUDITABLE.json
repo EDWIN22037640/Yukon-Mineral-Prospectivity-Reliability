@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-27",
+  "workflow": "V5 condicionada a observaciones PCA existentes",
+  "geometry": "EPSG:3579, 110x118 celdas de 1200m (inferido desde CSV; artículo menciona 1100m)",
+  "original_tif_recovered": false,
+  "cells": 12980,
+  "original_cells": 763,
+  "estimated_cells": 12217,
+  "ref_sizes": {
+    "train": 1799,
+    "validation": 594,
+    "test": 607
+  },
+  "copula_choice": {
+    "peso_correccion": 0.5,
+    "desplazamiento_RMS_normalizado": 0.07871459245107806,
+    "criterio": 0.17050725986494258,
+    "KS_medio": 0.0508711000236424,
+    "W1_normalizado": 0.07279470134029319,
+    "error_matriz_correlacion_Frob": 0.5471657856877319,
+    "W1_proyecciones": 0.08569944183112692
+  },
+  "heldout_statistic": {
+    "V4": {
+      "KS_medio": 0.037301788764944596,
+      "W1_normalizado": 0.06790764000269832,
+      "error_matriz_correlacion_Frob": 0.9293088745190744,
+      "W1_proyecciones": 0.09030343730435283
+    },
+    "V5": {
+      "KS_medio": 0.0375828120166768,
+      "W1_normalizado": 0.06615582164240728,
+      "error_matriz_correlacion_Frob": 0.6936343057884097,
+      "W1_proyecciones": 0.08483950628068396
+    }
+  },
+  "heldout_statistic_strict_nonoverlap_581": {
+    "V4": {
+      "KS_medio": 0.03726597216197267,
+      "W1_normalizado": 0.06618975061743934,
+      "error_matriz_correlacion_Frob": 0.9672033143139195,
+      "W1_proyecciones": 0.09131719829024217
+    },
+    "V5": {
+      "KS_medio": 0.037264759803340305,
+      "W1_normalizado": 0.06366321180308794,
+      "error_matriz_correlacion_Frob": 0.7310685081777848,
+      "W1_proyecciones": 0.08548454481794696
+    }
+  },
+  "heldout_strict_n": 581,
+  "overlap_excluded": 26,
+  "empirical_coverage_CQR_7band_mean": 0.9018910316420146,
+  "empirical_coverage_constant_7band_mean": 0.8945890282718592,
+  "mask_cells": 1372,
+  "ensemble": {
+    "nsim": 40,
+    "seed": 20261027,
+    "fraccion_score_070_espacial_base": 0.042681047765793526,
+    "fraccion_score_070_copula_base": 0.08482280431432974,
+    "fraccion_mediana_070_espacial": 0.03821263482280431,
+    "fraccion_mediana_070_copula": 0.07966101694915254,
+    "desacuerdo_promedio_fde_espacial": 0.42217662930488586,
+    "desacuerdo_promedio_fde_copula": 0.3813526928424835
+  },
+  "limitations": [
+    "La prueba estadística de 607 observaciones no contiene coordenadas.",
+    "Los intervalos adaptativos no garantizan cobertura nominal bajo dependencia espacial.",
+    "Simulaciones muestran incertidumbre condicionada al modelo, no posición de depósitos verificadas.",
+    "La evaluación de la red neuronal es sensibilidad de puntaje, no validación de reservas.",
+    "El archivo fuente 02_PCA.tif original continúa ausente."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "nsim": 40,
+  "seed": 20261027,
+  "fraccion_score_070_espacial_base": 0.042681047765793526,
+  "fraccion_score_070_copula_base": 0.08482280431432974,
+  "fraccion_mediana_070_espacial": 0.03821263482280431,
+  "fraccion_mediana_070_copula": 0.07966101694915254,
+  "desacuerdo_promedio_fde_espacial": 0.42217662930488586,
+  "desacuerdo_promedio_fde_copula": 0.3813526928424835
+}
