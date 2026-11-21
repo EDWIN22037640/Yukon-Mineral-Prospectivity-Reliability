@@ -1,0 +1,6 @@
+fold,n_model_train,n_calibration,n_test,positive_model_train,positive_calibration,positive_test,calibration_groups
+0,150,87,52,34,24,13,6
+1,154,65,70,22,30,19,5
+2,149,79,61,45,13,13,5
+3,166,70,53,44,10,17,5
+4,175,61,53,52,10,9,5

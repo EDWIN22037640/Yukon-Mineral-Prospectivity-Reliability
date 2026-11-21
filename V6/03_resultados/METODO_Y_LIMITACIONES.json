@@ -1,0 +1,16 @@
+{
+  "data": "Original PC1..PC7 and coordinates of source repo, not interpolated rasters",
+  "data_dedup": "289 unique PC signatures, coordinates 0/0 removed (not inventing locations)",
+  "unlabelled_pretrain": "Keras original AE encoder pretrained on full region covariates; possible transductive covariate use",
+  "FDE_FT_implementation": "PyTorch, 5 ReLU encoder layers (weights imported), output initialized each fold; weighted BCE 1500 epochs",
+  "FDE_FT_learning_rates": "encoder 5e-5, new sigmoid head 1e-3, weight_decay 1e-5, Adam",
+  "FDE_not_exact": "Adapted training schedule, not exact replication of 6000-epoch original TensorFlow code",
+  "RF": "400 trees, max_features=sqrt, min_samples_leaf=2, balanced_subsample, fixed across folds",
+  "LR": "fold-only StandardScaler + LogisticRegression C1 balanced",
+  "outer_split": "StratifiedKFold or StratifiedGroupKFold, 5 folds, two replications; 20/30 km grid with origin-shift sensitivity; 3 km train-exclusion buffer on 30 km experiment",
+  "calibration": "Out-of-fold Brier, ECE10 (small-sample descriptive), reliability bins; no posthoc calibration fitted to heldout",
+  "bootstrap": "1800 paired 30 km cluster resamples conditional on OOF predicted scores. Not inferential independent CV replicates; exploratory",
+  "external_limitation": "40 records no coordinates, 24 rows overlap with training signature, nonoverlap contains only 2 negatives",
+  "raster_reconstruction_limitation": "original 02_PCA.tif unavailable; 94.12% grid estimated; only sensitivity context",
+  "evaluation_note": "Metrics are of occurrence labels at sampled points; predicted scores are not calibrated prevalence or deposit probabilities"
+}

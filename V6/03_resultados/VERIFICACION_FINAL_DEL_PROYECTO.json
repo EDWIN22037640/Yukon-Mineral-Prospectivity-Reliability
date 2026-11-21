@@ -1,0 +1,20 @@
+{
+  "estado": "Verificación aprobada",
+  "firma_fuentes": "CSV originales, pesos H5 originales",
+  "filas_CV_unicas": 289,
+  "predicciones_OOF": 6936,
+  "protocolos": 4,
+  "repeticiones": 2,
+  "folds_total": 40,
+  "resultados_metricas": 12,
+  "pruebas_calibracion": 6,
+  "raster_celdas": 12980,
+  "raster_celdas_originales": 763,
+  "n_articulos_o_informes_word": 0,
+  "n_articulos_o_informes_pdf": 0,
+  "bootstrap_comparaciones": [
+    "RF_aleatoria_menos_espacial30",
+    "FDE_menos_RF_espacial30",
+    "RF_espacial30_menos_espacial30_buffer3"
+  ]
+}

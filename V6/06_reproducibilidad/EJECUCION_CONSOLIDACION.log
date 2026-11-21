@@ -1,0 +1,31 @@
+
+AUDIT {"original_train": 313, "original_positives": 95, "original_negatives": 218, "invalid_coordinates": 1, "repeated_rows_by_signature": 23, "valid_coordinate_unique_signatures": 289, "usable_positive": 71, "usable_negative": 218, "external_rows": 40, "external_labels": {"1": 20, "0": 20}, "external_matching_rows": 24, "external_matching_unique_signatures": 23, "external_independent_rows": 16, "external_independent_class_count": {"1": 14, "0": 2}, "contradictory_labels_for_same_train_signature": 0, "external_coordinates_available": false, "original_raster_available": false, "spatial_coordinates_system": "EPSG:3579 (fuentes originales)"}
+
+SUMMARY
+          protocolo modelo  n_replicas  AUC_medio   AUC_sd  AP_medio  F1_medio  sensibilidad_media  precision_media  balanced_accuracy_medio  Brier_medio  LogLoss_medio  ECE10_medio
+         aleatoria     RF           2   0.862191 0.007949  0.736158  0.663912            0.577465         0.781818                 0.762356     0.113638       0.375131     0.056935
+         aleatoria     LR           2   0.805789 0.017360  0.603754  0.641000            0.760563         0.553977                 0.780511     0.169243       0.554358     0.186195
+         aleatoria FDE-FT           2   0.857217 0.003655  0.725595  0.674699            0.788732         0.589474                 0.804917     0.143757       0.468705     0.165181
+        espacial20     RF           2   0.814479 0.029467  0.627541  0.570886            0.521127         0.636072                 0.710105     0.138544       0.437284     0.068201
+        espacial20     LR           2   0.764860 0.035497  0.527446  0.566640            0.704225         0.475116                 0.723672     0.192688       0.606004     0.192628
+        espacial20 FDE-FT           2   0.815803 0.026132  0.631486  0.625085            0.718310         0.558514                 0.763971     0.163038       0.521793     0.161995
+        espacial30     RF           2   0.782304 0.005254  0.593466  0.552013            0.485915         0.639423                 0.698233     0.147237       0.463049     0.072816
+        espacial30     LR           2   0.756558 0.003929  0.528084  0.542395            0.676056         0.453119                 0.705001     0.196934       0.638180     0.206319
+        espacial30 FDE-FT           2   0.766071 0.051784  0.574564  0.572493            0.704225         0.482931                 0.728259     0.187271       0.595988     0.187004
+espacial30_buffer3     RF           2   0.776328 0.003655  0.572703  0.532923            0.507042         0.562745                 0.689301     0.153193       0.477426     0.077065
+espacial30_buffer3     LR           2   0.753618 0.000868  0.521763  0.550148            0.697183         0.454572                 0.712124     0.201525       0.650840     0.212086
+espacial30_buffer3 FDE-FT           2   0.780560 0.015396  0.574968  0.566964            0.732394         0.462670                 0.727436     0.190894       0.605430     0.196340
+
+CI
+           tipo                              contraste  estimacion  IC95_inf  IC95_sup    B  p_bootstrap_exploratorio
+           AUC                           aleatoria RF    0.867812  0.804108  0.911341 1800                       NaN
+           AUC                          espacial30 RF    0.786019  0.694939  0.864295 1800                       NaN
+           AUC                  espacial30_buffer3 RF    0.778912  0.676758  0.865652 1800                       NaN
+           AUC                          espacial30 LR    0.753780  0.644865  0.840515 1800                       NaN
+           AUC                      espacial30 FDE-FT    0.802688  0.707072  0.874795 1800                       NaN
+           AUC                       aleatoria FDE-FT    0.859801  0.783740  0.914209 1800                       NaN
+           AUC                          espacial20 RF    0.835315  0.746557  0.893933 1800                       NaN
+Diferencia AUC          RF_aleatoria_menos_espacial30    0.081794  0.025531  0.140624 1800                  0.004444
+Diferencia AUC                FDE_menos_RF_espacial30    0.016669 -0.067760  0.075163 1800                  0.653333
+Diferencia AUC RF_espacial30_menos_espacial30_buffer3    0.007107 -0.009354  0.028598 1800                  0.494444
+TOTAL seconds 15.83482027053833

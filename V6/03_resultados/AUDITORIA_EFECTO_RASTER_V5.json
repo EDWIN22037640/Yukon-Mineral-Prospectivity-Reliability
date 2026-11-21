@@ -1,0 +1,24 @@
+{
+  "celdas_totales": 12980,
+  "celdas_originales_sin_alteracion": 763,
+  "proporcion_celdas_estimadas": 0.9412172573189522,
+  "media_cambio_absoluto_puntaje": 0.0449959498501152,
+  "p95_cambio_absoluto_puntaje": 0.1618819415569305,
+  "celdas_cambian_categoria_umbral_0_70": 547,
+  "fraccion_cambian_categoria_umbral_0_70": 0.04214175654853621,
+  "celdas_cambian_categoria_dentro_originales": 0,
+  "IQR_modelo_original_perturbaciones_median": 0.16759847849607468,
+  "IQR_modelo_original_perturbaciones_p90": 0.4107261121273042,
+  "porcentaje_incertidumbre_alta_IQR_gt_0_3": 0.23428351309707243,
+  "puntajes_sin_calibrar": true,
+  "correlacion_espacial_verdadera_con_TIFF_original": "no verificable: TIFF auténtico no proporcionado",
+  "celda_m": 1200,
+  "celda_m_origen": "inferido, artículo 1100",
+  "procedencia_celdas": {
+    "1": 763,
+    "2": 6639,
+    "3": 4859,
+    "4": 717,
+    "5": 2
+  }
+}

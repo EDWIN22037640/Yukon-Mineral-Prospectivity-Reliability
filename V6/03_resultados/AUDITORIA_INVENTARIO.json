@@ -1,0 +1,26 @@
+{
+  "original_train": 313,
+  "original_positives": 95,
+  "original_negatives": 218,
+  "invalid_coordinates": 1,
+  "repeated_rows_by_signature": 23,
+  "valid_coordinate_unique_signatures": 289,
+  "usable_positive": 71,
+  "usable_negative": 218,
+  "external_rows": 40,
+  "external_labels": {
+    "1": 20,
+    "0": 20
+  },
+  "external_matching_rows": 24,
+  "external_matching_unique_signatures": 23,
+  "external_independent_rows": 16,
+  "external_independent_class_count": {
+    "1": 14,
+    "0": 2
+  },
+  "contradictory_labels_for_same_train_signature": 0,
+  "external_coordinates_available": false,
+  "original_raster_available": false,
+  "spatial_coordinates_system": "EPSG:3579 (fuentes originales)"
+}
