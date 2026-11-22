@@ -1,0 +1,14 @@
+# Los originales del repositorio fuente se instalan localmente y NO se vuelven a subir.
+V5/01_fuentes/*.csv
+V5/01_fuentes/*.h5
+V6/01_fuentes/*.csv
+V6/01_fuentes/*.h5
+**/__pycache__/
+**/*.pyc
+**/.ipynb_checkpoints/
+**/.venv/
+.venv/
+.env
+.env.*
+**/.DS_Store
+**/Thumbs.db
